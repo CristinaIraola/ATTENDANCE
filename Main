@@ -1,0 +1,14 @@
+
+public class Main {
+    public static void main(String[] args) {
+        // Create instances of different vehicles
+        ToyotaVIOS toyotaVIOS = new ToyotaVIOS(120.5, "black", 25000);
+        U2SpyPlane u2SpyPlane = new U2SpyPlane(900, "White", 10000000);
+        FandangoYacht fandangoYacht = new FandangoYacht(30, "Pink", 500000);
+        
+        // Calling the stop() method on different vehicles
+        toyotaVIOS.stop();
+        u2SpyPlane.stop();
+        fandangoYacht.stop();
+    }
+}
