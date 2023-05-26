@@ -1,2 +1,40 @@
 # ATTENDANCE
 
+public class plane {
+
+   private double wingspan;
+	    
+	    public Plane(double wingspan) {
+	        this.wingspan = wingspan;
+	    }
+	    
+	    public double getWingspan() {
+	        return wingspan;
+	    }
+	    
+	    public void fly() {
+	        System.out.println("The plane is flying.");
+	    }
+	}
+
+
+public class U2SpyPlane extends Plane {
+
+	public U2SpyPlane(double wingspan) {
+        super(wingspan);
+    }
+    
+    public static void main(String[] args) {
+     
+        U2SpyPlane u2SpyPlane = new U2SpyPlane(80.5);
+        
+     
+        double wingspan = u2SpyPlane.getWingspan();
+        System.out.println("Wingspan: " + wingspan);
+        
+        u2SpyPlane.fly();
+    }
+
+
+}
+
